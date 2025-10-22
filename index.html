@@ -1,49 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mathematics Tests - FYJC Portal</title>
-  <style>
-    /* Basic reset */
-    * { margin:0; padding:0; box-sizing:border-box; }
-
-    body {
-      font-family: "Poppins", sans-serif;
-      background-color: #f9f9f9;
-      color: #222;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      text-align: center;
-      padding: 16px;
-    }
-
-    .message-box {
-      background: #ffffff;
-      padding: 30px 20px;
-      border-radius: 16px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      max-width: 400px;
-    }
-
-    .message-box h1 {
-      font-size: 1.5rem;
-      color: #f57c00; /* orange color for Mathematics */
-      margin-bottom: 12px;
-    }
-
-    .message-box p {
-      font-size: 1rem;
-      color: #555;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathematics 11th - MCQ Test Portal</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="message-box">
-    <h1>No Mathematics Tests Available</h1>
-    <p>Mathematics tests are not available yet. They might be available soon. Stay tuned!</p>
-  </div>
+    <div id="home-screen" class="screen active">
+        <div class="container">
+            <header class="header">
+                <h1 class="main-title">Mathematics 11th Standard</h1>
+                <p class="subtitle">Master Mathematics with MCQ Practice</p>
+                <div class="quote-box">
+                    <p class="quote" id="motivational-quote"></p>
+                </div>
+            </header>
+
+            <div class="chapters-grid">
+                <div class="chapter-card" data-chapter="1">
+                    <div class="chapter-number">01</div>
+                    <h3>Angle and its Measurement</h3>
+                    <p>15 MCQs</p>
+                    <button class="btn-primary" onclick="startTest(1)">Start Test</button>
+                </div>
+
+                <div class="chapter-card" data-chapter="2">
+                    <div class="chapter-number">02</div>
+                    <h3>Trigonometry I</h3>
+                    <p>15 MCQs</p>
+                    <button class="btn-primary" onclick="startTest(2)">Start Test</button>
+                </div>
+
+                <div class="chapter-card" data-chapter="3">
+                    <div class="chapter-number">03</div>
+                    <h3>Trigonometry II</h3>
+                    <p>15 MCQs</p>
+                    <button class="btn-primary" onclick="startTest(3)">Start Test</button>
+                </div>
+
+                <div class="chapter-card" data-chapter="4">
+                    <div class="chapter-number">04</div>
+                    <h3>Determinants and Matrices</h3>
+                    <p>15 MCQs</p>
+                    <button class="btn-primary" onclick="startTest(4)">Start Test</button>
+                </div>
+
+                <div class="chapter-card" data-chapter="5">
+                    <div class="chapter-number">05</div>
+                    <h3>Straight Lines</h3>
+                    <p>15 MCQs</p>
+                    <button class="btn-primary" onclick="startTest(5)">Start Test</button>
+                </div>
+
+                <div class="chapter-card" data-chapter="6">
+                    <div class="chapter-number">06</div>
+                    <h3>Circle</h3>
+                    <p>15 MCQs</p>
+                    <button class="btn-primary" onclick="startTest(6)">Start Test</button>
+                </div>
+
+                <div class="chapter-card" data-chapter="7">
+                    <div class="chapter-number">07</div>
+                    <h3>Conic Sections</h3>
+                    <p>15 MCQs</p>
+                    <button class="btn-primary" onclick="startTest(7)">Start Test</button>
+                </div>
+
+                <div class="chapter-card" data-chapter="8">
+                    <div class="chapter-number">08</div>
+                    <h3>Measures of Dispersion</h3>
+                    <p>15 MCQs</p>
+                    <button class="btn-primary" onclick="startTest(8)">Start Test</button>
+                </div>
+
+                <div class="chapter-card" data-chapter="9">
+                    <div class="chapter-number">09</div>
+                    <h3>Probability</h3>
+                    <p>15 MCQs</p>
+                    <button class="btn-primary" onclick="startTest(9)">Start Test</button>
+                </div>
+
+                <div class="chapter-card" data-chapter="10">
+                    <div class="chapter-number">10</div>
+                    <h3>Complex Numbers</h3>
+                    <p>15 MCQs</p>
+                    <button class="btn-primary" onclick="startTest(10)">Start Test</button>
+                </div>
+
+                <div class="chapter-card" data-chapter="11">
+                    <div class="chapter-number">11</div>
+                    <h3>Sequence and Series</h3>
+                    <p>15 MCQs</p>
+                    <button class="btn-primary" onclick="startTest(11)">Start Test</button>
+                </div>
+
+                <div class="chapter-card" data-chapter="12">
+                    <div class="chapter-number">12</div>
+                    <h3>Permutation and Combination</h3>
+                    <p>15 MCQs</p>
+                    <button class="btn-primary" onclick="startTest(12)">Start Test</button>
+                </div>
+
+                <div class="chapter-card" data-chapter="13">
+                    <div class="chapter-number">13</div>
+                    <h3>Methods of Induction & Binomial Theorem</h3>
+                    <p>15 MCQs</p>
+                    <button class="btn-primary" onclick="startTest(13)">Start Test</button>
+                </div>
+
+                <div class="chapter-card" data-chapter="14">
+                    <div class="chapter-number">14</div>
+                    <h3>Sets and Relations</h3>
+                    <p>15 MCQs</p>
+                    <button class="btn-primary" onclick="startTest(14)">Start Test</button>
+                </div>
+
+                <div class="chapter-card" data-chapter="15">
+                    <div class="chapter-number">15</div>
+                    <h3>Functions</h3>
+                    <p>15 MCQs</p>
+                    <button class="btn-primary" onclick="startTest(15)">Start Test</button>
+                </div>
+
+                <div class="chapter-card" data-chapter="16">
+                    <div class="chapter-number">16</div>
+                    <h3>Limits</h3>
+                    <p>15 MCQs</p>
+                    <button class="btn-primary" onclick="startTest(16)">Start Test</button>
+                </div>
+
+                <div class="chapter-card" data-chapter="17">
+                    <div class="chapter-number">17</div>
+                    <h3>Continuity</h3>
+                    <p>15 MCQs</p>
+                    <button class="btn-primary" onclick="startTest(17)">Start Test</button>
+                </div>
+
+                <div class="chapter-card" data-chapter="18">
+                    <div class="chapter-number">18</div>
+                    <h3>Differentiation</h3>
+                    <p>15 MCQs</p>
+                    <button class="btn-primary" onclick="startTest(18)">Start Test</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="test-screen" class="screen">
+        <div class="test-container">
+            <div class="test-header">
+                <h2 id="test-title">Chapter Test</h2>
+                <div class="test-info">
+                    <span class="timer" id="timer">Time: 00:00</span>
+                    <span class="question-counter" id="question-counter">Question 1/15</span>
+                </div>
+            </div>
+            <div class="progress-bar"><div class="progress-fill" id="progress-fill"></div></div>
+            <div class="question-container" id="question-container"></div>
+            <div class="navigation-buttons">
+                <button class="btn-secondary" onclick="previousQuestion()" id="prev-btn">Previous</button>
+                <button class="btn-secondary" onclick="nextQuestion()" id="next-btn">Next</button>
+                <button class="btn-primary" onclick="submitTest()" id="submit-btn" style="display:none;">Submit Test</button>
+            </div>
+            <button class="btn-exit" onclick="exitTest()">Exit Test</button>
+        </div>
+    </div>
+
+    <div id="result-screen" class="screen">
+        <div class="result-container">
+            <div class="result-animation"><div class="trophy-icon">🏆</div></div>
+            <h2>Test Completed!</h2>
+            <div class="score-display"><div class="score-circle"><span id="score-percentage">0%</span></div></div>
+            <div class="result-details">
+                <div class="result-item"><span class="label">Correct Answers:</span><span class="value correct" id="correct-count">0</span></div>
+                <div class="result-item"><span class="label">Wrong Answers:</span><span class="value wrong" id="wrong-count">0</span></div>
+                <div class="result-item"><span class="label">Unattempted:</span><span class="value unattempted" id="unattempted-count">0</span></div>
+                <div class="result-item"><span class="label">Total Score:</span><span class="value total" id="total-score">0/15</span></div>
+                <div class="result-item"><span class="label">Time Taken:</span><span class="value" id="time-taken">00:00</span></div>
+            </div>
+            <div class="result-message" id="result-message"><p></p></div>
+            <div class="result-quote"><p id="result-quote"></p></div>
+            <div class="result-buttons">
+                <button class="btn-primary" onclick="reviewAnswers()">Review Answers</button>
+                <button class="btn-secondary" onclick="retakeTest()">Retake Test</button>
+                <button class="btn-secondary" onclick="goHome()">Back to Home</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="review-screen" class="screen">
+        <div class="review-container">
+            <h2>Answer Review</h2>
+            <div id="review-content"></div>
+            <button class="btn-primary" onclick="goHome()">Back to Home</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
